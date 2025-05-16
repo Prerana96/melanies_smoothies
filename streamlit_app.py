@@ -4,7 +4,7 @@ from snowflake.snowpark.functions import col
 
 # Write directly to the app
 st.title("🥤 Customise Your Smoothie!🥤")
-streamlit.title("My Parents New Healthier Diner")
+st.title("My Parents New Healthier Diner")
 st.write("""
 Choose the fruits you want in your custom smoothie!
 """)
