@@ -30,12 +30,13 @@ if ingredients_list:
         ingredients_string += fruit_chosen + ' '
         
   #  st.write(ingredients_string)
-    st.text(smoothiefroot_response.json())
+
     
     my_insert_stmt = """ insert into smoothies.public.orders(ingredients,Name_on_order)
             values ('""" + ingredients_string + """','"""+Name_on_order+"""')"""
 
     st.write(my_insert_stmt)
+st.text(smoothiefroot_response.json())
     #st.stop()
     
     time_to_insert=st.button('Submit Order')
